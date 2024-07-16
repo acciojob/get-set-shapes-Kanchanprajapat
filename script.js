@@ -31,16 +31,7 @@ class Square extends Animal {
         return 4 * this._width; // Since width and height are the same for a square, we can use this._width or this._height
     }
 }
-const rectangle = new Rectangle(5, 10);
-console.log(rectangle.width); // Output: 5
-console.log(rectangle.height); // Output: 10
-console.log(rectangle.getArea()); // Output: 50
 
-const square = new Square(7);
-console.log(square.width); // Output: 7
-console.log(square.height); // Output: 7
-console.log(square.getArea()); // Output: 49
-console.log(square.getPerimeter());
 // Do not change the code below this line
 window.Rectangle = Rectangle;
 window.Square = Square;
