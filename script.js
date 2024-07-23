@@ -1,35 +1,31 @@
 //complete this code
 class Rectangle {
-	 constructor(width, height) {
-        this._width = width;
-        this._height = height;
-    }
+  constructor(width, height) {
+    this._width = width;
+    this._height = height;
+  }
 
-    // Getter for width
-    get width() {
-        return this._width;
-    }
+  get width() {
+    return this._width;
+  }
 
-    // Getter for height
-    get height() {
-        return this._height;
-    }
+  get height() {
+    return this._height;
+  }
 
-    // Method to calculate the area
-    getArea() {
-        return this._width * this._height;
-    }
+  getArea() {
+    return this._width * this._height;
+  }
 }
 
-class Square extends Animal {
-	constructor(side) {
-        super(side, side); // Call the constructor of Rectangle with side for both width and height
-    }
+class Square extends Rectangle {
+  constructor(side) {
+    super(side, side);
+  }
 
-    // Method to calculate the perimeter
-    getPerimeter() {
-        return 4 * this._width; // Since width and height are the same for a square, we can use this._width or this._height
-    }
+  getPerimeter() {
+    return 4 * this._width;
+  }
 }
 
 // Do not change the code below this line
